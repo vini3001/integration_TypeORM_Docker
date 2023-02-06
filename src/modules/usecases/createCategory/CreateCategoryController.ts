@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
-
+console.log("createCategory")
 class CreateCategoryController {
 
   constructor(private createCategoryUseCase: CreateCategoryUseCase) { }

@@ -10,13 +10,13 @@ class SpecificationsRepository implements ISpecificationsRepository {
     this.Specifications = []
   }
 
-  public static getInstance(): SpecificationsRepository {
+  /*public static getInstance(): SpecificationsRepository {
     if(!SpecificationsRepository.INSTANCE){
       SpecificationsRepository.INSTANCE = new SpecificationsRepository()
     }
 
     return SpecificationsRepository.INSTANCE
-  }
+  }*/
 
   create({ name, description }: ICreateSpecificationsDTO): void {
     const specification = new Specifications()

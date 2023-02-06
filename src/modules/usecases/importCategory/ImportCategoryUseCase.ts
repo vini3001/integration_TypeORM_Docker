@@ -1,7 +1,7 @@
 import fs from 'fs'
 import csvParse from 'csv-parse'
 import { CategoriesRepository } from '../../cars/repositories/implementations/CategoriesRepository'
-
+console.log("teste")
 interface IImportCategory{
     name: string
     description: string

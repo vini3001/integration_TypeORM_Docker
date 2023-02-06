@@ -3,6 +3,7 @@ import "reflect-metadata"
 import swaggerUi from "swagger-ui-express";
 import {router} from "./routes";
 import swaggerFile from "./swagger.json";
+import "./database"
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(router)
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.get("/", (req: Request, res: Response) => {
+  console.log("Hello fuck")
   return res.json({ message: "Hello World!" });
 });
 
